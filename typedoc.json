@@ -1,0 +1,18 @@
+{
+  "name": "react-native-pagseguro-moderninha",
+  "theme": "pages-plugin",
+  "pages": {
+    "groups": [
+      {
+        "title": "Docs",
+        "pages": [
+          {
+            "title": "Introdução",
+            "source": "./pages/intro.md"
+          }
+        ]
+      }
+    ],
+    "output": "pages"
+  }
+}

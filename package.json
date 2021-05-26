@@ -1,0 +1,32 @@
+{
+  "name": "react-native-plugpag-moderninha",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "types": "./build",
+  "author": "Matheus Matos",
+  "homepage": "https://github.com/matheusmatos/react-native-pagseguro-moderninha#readme",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build && yarn clean:plugin && yarn build:plugin",
+    "build:plugin": "EXPO_NONINTERACTIVE=1 expo-module build plugin",
+    "clean:plugin": "expo-module clean plugin",
+    "lint:plugin": "expo-module lint plugin",
+    "test:plugin": "expo-module test plugin",
+    "prepublishOnly": "expo-module prepublishOnly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusmatos/react-native-pagseguro-moderninha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matheusmatos/react-native-pagseguro-moderninha/issues"
+  },
+  "devDependencies": {
+    "@expo/config-plugins": "^1.0.29",
+    "expo-module-scripts": "^2.0.0",
+    "react-native": "~0.63",
+    "typedoc": "^0.20.36",
+    "typedoc-plugin-pages": "^1.1.0"
+  }
+}
